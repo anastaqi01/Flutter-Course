@@ -1,4 +1,9 @@
 void main() {
+  // operators
+  // +, -, *, /, ~/, %,
+  // ||, &&, !, ==, !=
+  // if-else, if-else_if-else
+
   // NIC Allotment
   int age = 60;
   if (age >= 18) {
@@ -23,5 +28,29 @@ void main() {
     print("Incorrect grade");
   } else {
     print("You have failed this class. Try Again!");
+  }
+
+  // odd even number condition
+
+  int number = 9;
+  if (number % 2 == 0) {
+    print("even number");
+  } else {
+    print("odd number");
+  }
+
+  // if number is divisible by any number
+
+  int num1 = 35;
+  if (num1 % 5 == 0 || num1 % 7 == 0) {
+    if (num1 % 5 == 0 && num1 % 7 == 0) {
+      print("number is divisible by both");
+    } else if (num1 % 7 == 0) {
+      print("number is divisible by 7");
+    } else {
+      print("number is divisible by 5");
+    }
+  } else {
+    print("number is not divisible by 5 or 7");
   }
 }
